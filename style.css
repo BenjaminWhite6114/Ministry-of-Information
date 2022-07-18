@@ -2,3 +2,10 @@
 body {
   background-image: url("https://duckduckgo.com/?t=ffab&q=documents&iax=images&ia=images&iai=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4274910.png");
 }
+
+#main{
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 5px;
+}
