@@ -2,6 +2,7 @@
 body {
   background-image: url("https://wallpaperaccess.com/full/4274910.png");
   background-size: cover;
+  background-position: fixed;
 }
 
 .block{

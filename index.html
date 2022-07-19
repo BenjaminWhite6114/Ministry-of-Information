@@ -4,10 +4,16 @@
     <head>
       <title>Ministry of Information: Home</title>
 	  <link rel = "stylesheet" href = "./style.css">
+	  <!-- Load React API -->
+      <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+      <!-- Load React DOM-->
+      <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+      <!-- Load Babel Compiler -->
+      <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     </head>
     <body>
 	     <div class = "block">
-          <h1>Welcome To The Ministry of Information</h1>
+          <h1 id = "welcomeBanner">Welcome To The Ministry of Information</h1>
           <p>Have you ever felt lost in the sea of information society has immersed you in? Have you ever felt like you know less than everyone else? Like someone else holds all the cards. Hello. We are the ones holding those cards.</p>
 		 </div>
 		 <br>
@@ -17,15 +23,21 @@
 			<p>Forms are your medium of interacting with the vast and unknowable expanse of knowledge which is the Ministry of Information. For example, the [insert form here].</p>
 	     </div>
 		 <br>
+		  <!-- Image section -->
           <div class="block container">
 		  <br>
            <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https:%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F275757415219DA5F0A" alt="Seoul" style="width:30%;">
            <div class="text-block">
              <h4>Nature</h4>
-             <p>What a beautiful sunrise</p>
+             <p onclick = "">What a beautiful sunrise</p>
            </div>
+		   <br>
           </div>
-
+		  <script type = "text/babel">
+		    let eggOne = () => {
+			  document.getElementById("welcomeBanner").innerHTML = "Shhh... If you keep poking around, they'll find me.";
+			}
+		  </script>
       </div>
       <div class="sidenav">
 		  <a href = "./index.html">Home</a>
