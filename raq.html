@@ -3,6 +3,12 @@
   <head>
     <title>Ministry of Information: Rarely Asked Questions</title>
 	<link href = "./style.css" rel = "stylesheet">
+	<!-- Load React API -->
+    <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- Load React DOM-->
+    <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- Load Babel Compiler -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   </head>
   <body>
     <!--Page intro Block-->
@@ -17,6 +23,7 @@
 	  <h1>How do I navigate the Ministry of Information website?</h1>
 	  <p>Simple, once you've navigated to the home page, one only needs a mouse and keyboard to surf the seas of information! Using the scroll wheel on your mouse, you can navigate up and down any given page on the site. If the page you're on doesn't have the information you're looking for, try clicking one of the tabs on the sidebar to navigate to
 	  an alternative page.</p>
+	  <p id = "clickWarning" onclick = "eggTwo()">Warning: Be careful where you click</p>
 	</div>
 	<br>
     <!-- The navigation tool on the sidebar -->
@@ -29,4 +36,10 @@
       <a href="./forms.html">Forms</a>
     </div>
   </body>
+  <!--Javascript functions for this page go here-->
+  <script type = "text/babel">
+    let eggTwo = () => {
+	  document.getElementById("clickWarning").innerHTML = "you shouldn't have done that...";
+	}
+  </script>
 </hmtl>
