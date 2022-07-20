@@ -1,15 +1,19 @@
 
-body {
+/* body {
   background-image: url("https://wallpaperaccess.com/full/4274910.png");
   background-size: cover;
   background-position: fixed;
-}
+} */
 
 .block{
   background-color: #ffffff;
   border-style: solid;
   border-color: #000000;
   border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.sidebarright{
   margin-left: 180px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
@@ -45,8 +49,16 @@ body {
  position: relative;
 }
 
+/* center of the div */
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* Bottom right text */
-#text-block-one {
+.text-block-one {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -54,4 +66,64 @@ body {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.inspirational-text-block1 {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-style: bold;
+  font-size: 30px;
+
+  background-color: black;
+  color: white;
+}
+
+.inspirational-text-block2 {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+
+  background-color: black;
+  color: white;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
 }
