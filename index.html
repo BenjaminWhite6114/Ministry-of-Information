@@ -27,23 +27,28 @@
           <div class="block container">
 		  <br>
            <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https:%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F275757415219DA5F0A" alt="Seoul" style="width:30%;">
-           <div class="text-block">
+           <div id ="text-block-one">
              <h4>Nature</h4>
              <p onclick = "eggOne()">What a beautiful sunrise</p>
            </div>
+		   <div id = "text-block-two" style = "position: absolute; right: 5%; top: 5%">
+		     <p>The universe began when God created light. Civilization began when the Ministry of Information created forms.</p>
+		   </div>
 		   <br>
           </div>
+		  <!--Javascript functions for the page go here-->
 		  <script type = "text/babel">
 		    let eggOne = () => {
 			  document.getElementById("welcomeBanner").innerHTML = "Shhh... If you keep poking around, they'll find me.";
 			}
 		  </script>
       </div>
+	  <!--The navigation tool on the sidebar -->
       <div class="sidenav">
 		  <a href = "./index.html">Home</a>
           <a href="#">About</a>
           <a href="./services.html">Services</a>
-          <a href="#">Rarely asked questions</a>
+          <a href="./raq.html">Rarely asked questions</a>
           <a href="./appointments.html">Contact</a>
           <a href="./forms.html">Forms</a>
 		  <a href = "/hidden/timemanagement.html">Test</a>

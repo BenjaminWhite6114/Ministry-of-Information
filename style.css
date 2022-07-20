@@ -46,7 +46,7 @@ body {
 }
 
 /* Bottom right text */
-.text-block {
+#text-block-one {
   position: absolute;
   bottom: 20px;
   left: 20px;
